@@ -28,6 +28,10 @@ def mult2(lst: list[int]) -> list[int]:
     return [i * 2 for i in lst]
 
 
+def map_mult2(i: int):
+    return i * 2
+
+
 def main():
     utils.new_paragraph('unpack with *')
     l = [10, 20, 30]
@@ -60,10 +64,24 @@ def main():
     a, b = tuple_as_return()
     print(a, b)
 
-    utils.new_paragraph('')
+    utils.new_paragraph('list comprehension')
     l = [10, 20, 30]
     l2 = mult2(l)
     print(l2)  # [20, 40, 60]
+
+    utils.new_paragraph('map, lambda')
+    l2 = list(map(map_mult2, l))
+    print(l2)
+    l2 = [map_mult2(i) for i in l2]
+    print(l2)
+    l2 = list(map(lambda x: x * 2, l2))
+    print(l2)
+    m2 = lambda x: x * 2
+    l2 = list(map(m2, l2))
+    print(l2)
+    dirty = ['   value 1   ', '       value 2', '   value 3       ']
+    clean = [i.strip() for i in dirty]
+    print(f'Before: {dirty}\nAfter: {clean}')
 
 
 if __name__ == '__main__':
