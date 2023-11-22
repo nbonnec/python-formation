@@ -14,6 +14,7 @@ https://docadmin.orsys.fr/Emargement/Participant
 - utiliser les variables privées
 - https://www.attrs.org/en/stable/examples.html
 - `@override`
+- sqlite3
 
 ## Notes
 
