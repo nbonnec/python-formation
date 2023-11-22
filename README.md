@@ -12,6 +12,7 @@ https://docadmin.orsys.fr/Emargement/Participant
     - https://threeofwands.com/why-i-use-attrs-instead-of-pydantic/
 - Flask, ratelimiter, timeit
 - utiliser les variables privées
+- https://www.attrs.org/en/stable/examples.html
 
 ## Notes
 

@@ -5,16 +5,13 @@ import sys
 from pprint import pprint
 from utils import new_paragraph
 from tp04.Rectangle import Rectangle
+from tp04.DataRectangle import DataRectangle
 
 
 def main():
-    new_paragraph('private')
+    new_paragraph('property')
     rectangle1 = Rectangle(5, 8)
-    print(rectangle1._Rectangle__length)  # Bad!
-    print(rectangle1._Rectangle__width)  # Bad!
-    length = rectangle1.get_length()
-    width = rectangle1.get_width()
-    print(f'Length= {length}, width= {width}, surface= {rectangle1.get_surface()}')
+    print(f'Length= {rectangle1.length}, width= {rectangle1.width}, surface= {rectangle1.get_surface()}')
 
     new_paragraph('equals')
     rectangle2 = Rectangle(5, 8)
@@ -24,6 +21,13 @@ def main():
         print('Rectangles are not equals')
 
     print(rectangle1, rectangle2)
+
+    new_paragraph('dataclasses')
+    data_rect1 = DataRectangle(42, 43)
+    data_rect2 = DataRectangle(42, 2)
+    print(data_rect1.length)
+    print(data_rect1.width)
+    print(data_rect1)
 
 
 if __name__ == '__main__':
