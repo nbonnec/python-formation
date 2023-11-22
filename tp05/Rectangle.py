@@ -1,8 +1,9 @@
 from typing import Self
 from types import NotImplementedType
+from tp05.ICalcGeo import ICalcGeo
 
 
-class Rectangle:
+class Rectangle(ICalcGeo):
     """A very sophisticated class."""
 
     __slots__ = ('__length', '__width')
@@ -32,7 +33,8 @@ class Rectangle:
     def width(self, width: int):
         self.__width = width
 
-    def get_surface(self) -> int:
+    @property
+    def surface(self) -> float:
         return self.__length * self.__width
 
     def __eq__(self, o: object) -> bool | NotImplementedType:
