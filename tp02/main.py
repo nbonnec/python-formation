@@ -3,23 +3,22 @@
 import os
 import sys
 from pprint import pprint
+from utils import new_paragraph
 
 
 def main():
+    new_paragraph('try, except, else, finally')
     try:
         a = int(input('Value of a= '))
         b = 2
         c = b / a
         print(c)
-    except ZeroDivisionError as e:
-        print('ZeroDivisionError')
+    except Exception as e:
         print(e, type(e))
-    except TypeError as e:
-        print('TypeError')
-        print(e, type(e))
-    except ValueError as e:
-        print('ValueError')
-        print(e, type(e))
+    else:
+        print('No error')
+    finally:  # it is better in libraries
+        print('finally')
     print('After errors')
 
 
