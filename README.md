@@ -13,6 +13,7 @@ https://docadmin.orsys.fr/Emargement/Participant
 - Flask, ratelimiter, timeit
 - utiliser les variables privées
 - https://www.attrs.org/en/stable/examples.html
+- `@override`
 
 ## Notes
 
