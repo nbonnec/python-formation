@@ -1,5 +1,6 @@
 #!/usr/bin/env python
 
+import threading
 import time
 from pprint import pprint
 
@@ -26,8 +27,14 @@ def main():
     all_logs = [f'{URL}/{a["href"]}' for a in all_a if a['href'].endswith('.log')]
     pprint(all_logs)
 
+    threads = []
     for log in all_logs:
-        download(log)
+        th = threading.Thread(target=download, args=[log])
+        th.start()
+        threads.append(th)
+
+    for thread in threads:
+        thread.join()
 
     print(time.perf_counter() - start)
 
