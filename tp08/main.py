@@ -3,8 +3,16 @@
 import os
 import sys
 from pprint import pprint
+from typing import Iterator
 from utils import new_paragraph
 from tp08.UserDAO import UserDAO
+from tp08.User import User
+
+
+def filter_male(gen: Iterator[User]):
+    for u in gen:
+        if u.gender == 'Male':
+            yield u
 
 
 def main():
@@ -18,8 +26,9 @@ def main():
     print(next(users))
     print(list(users))
 
-    for u in users:
-        print(u)
+    male_users = filter_male(dao.find_all())
+    for male in male_users:
+        print(male)
 
 
 if __name__ == '__main__':
