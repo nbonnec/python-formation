@@ -2,23 +2,24 @@
 import asyncio
 import time
 
-import requests
+import httpx
 from bs4 import BeautifulSoup
 
 URL: str = 'https://logs.eolem.com/'
 
 
 async def download(log: str) -> None:
-    rsp = requests.get(log)  # Nope, this is a synchronous call!
-    filename = log.split('/')[-1]
-    with open(filename, 'w') as f:
-        f.write(rsp.text)
+    async with httpx.AsyncClient() as client:
+        rsp = await client.get(log)  # Nope, this is a synchronous call!
+        filename = log.split('/')[-1]
+        with open(filename, 'w') as f:
+            f.write(rsp.text)
 
 
 async def main():
     start = time.perf_counter()
 
-    rsp = requests.get(URL)
+    rsp = httpx.get(URL)
     soup = BeautifulSoup(rsp.text, 'html.parser')
     all_a = soup.find_all('a')
 
