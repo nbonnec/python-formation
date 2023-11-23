@@ -1,3 +1,3 @@
-import tp08.main_import as my_main
+import tp08.main as my_main
 
 my_main.main()
