@@ -30,6 +30,12 @@ def main():
     for male in male_users:
         print(male)
 
+    new_paragraph('context manager')
+
+    with UserDAO(r'tp08/deb.db') as dao:
+        raise Exception('Error in with!')
+        print(*dao.find_all())
+
 
 if __name__ == '__main__':
     main()
