@@ -17,6 +17,9 @@ https://docadmin.orsys.fr/Emargement/Participant
 - sqlite3
 - https://www.fullstackpython.com/object-relational-mappers-orms.html
 - https://agiledata.org/essays/impedanceMismatch.html
+- https://docs.python.org/fr/3/library/tkinter.html
+- https://python-poetry.org/
+- https://docs.scrapy.org/en/latest/intro/tutorial.html
 
 ## Notes
 
