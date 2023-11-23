@@ -1,6 +1,5 @@
 import sqlite3
 from contextlib import ContextDecorator
-
 from typing import Iterator
 
 from tp08.User import User
