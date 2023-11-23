@@ -1,10 +1,6 @@
 #!/usr/bin/env python
 
-import os
-import sys
 import threading
-
-from pprint import pprint
 
 the_lock = threading.Lock()
 

@@ -1,5 +1,3 @@
-import my_module_main_1
-
 b = 'tutu'
 
 

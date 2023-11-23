@@ -1,4 +1,3 @@
-from typing import Self
 from types import NotImplementedType
 
 

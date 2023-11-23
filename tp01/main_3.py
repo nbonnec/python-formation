@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 
-import os
-import sys
 import utils
-from pprint import pprint
 
 
 def add(*lst: int) -> int:

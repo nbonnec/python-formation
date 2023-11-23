@@ -1,10 +1,5 @@
 #!/usr/bin/env python
 
-import os
-import sys
-from pprint import pprint
-from utils import new_paragraph
-
 from tp07.Rectangle import Rectangle
 
 

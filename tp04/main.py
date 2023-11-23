@@ -1,11 +1,8 @@
 #!/usr/bin/env python
 
-import os
-import sys
-from pprint import pprint
-from utils import new_paragraph
-from tp04.Rectangle import Rectangle
 from tp04.DataRectangle import DataRectangle
+from tp04.Rectangle import Rectangle
+from utils import new_paragraph
 
 
 def main():
