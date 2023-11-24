@@ -1,12 +1,10 @@
 #!/usr/bin/env python
 
-import os
-import sys
-from pprint import pprint
 from typing import Iterator
-from utils import new_paragraph
-from tp08.UserDAO import UserDAO
+
 from tp08.User import User
+from tp08.UserDAO import UserDAO
+from utils import new_paragraph
 
 
 def filter_male(gen: Iterator[User]):

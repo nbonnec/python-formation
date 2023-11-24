@@ -1,12 +1,7 @@
 #!/usr/bin/env python
 
 import csv
-import os
 import sqlite3
-import sys
-
-from pprint import pprint
-from utils import new_paragraph
 
 CREATE = """CREATE TABLE 'users_tbl2' (
     'id'	INTEGER,

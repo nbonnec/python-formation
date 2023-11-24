@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 
-import os
-import sys
 import traceback
-from pprint import pprint
+
 from utils import new_paragraph
 
 

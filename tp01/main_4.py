@@ -1,9 +1,6 @@
 #!/usr/bin/env python
 
-import os
-import sys
 from collections import deque
-from pprint import pprint
 
 from utils import new_paragraph
 

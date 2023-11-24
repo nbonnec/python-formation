@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 
-import os
-import sys
-from pprint import pprint
 import copy
-import tp01.my_module_main_2
+
 from tp01.my_module_main_2 import hello
 
 a = 'tutu'

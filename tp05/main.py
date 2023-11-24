@@ -1,13 +1,9 @@
 #!/usr/bin/env python
 
-import os
-import sys
-from pprint import pprint
-from utils import new_paragraph
-
 from tp05.Circle import Circle
 from tp05.ICalcGeo import ICalcGeo
 from tp05.Square import Square
+from utils import new_paragraph
 
 
 def show_surface(geo: ICalcGeo):

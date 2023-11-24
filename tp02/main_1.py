@@ -1,9 +1,7 @@
 #!/usr/bin/env python
 
-import os
-import sys
-from pprint import pprint
 from typing import Callable
+
 from utils import new_paragraph
 
 

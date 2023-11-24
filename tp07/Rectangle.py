@@ -1,5 +1,5 @@
-from typing import Self
 from types import NotImplementedType
+
 from tp05.ICalcGeo import ICalcGeo
 
 
