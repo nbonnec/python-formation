@@ -10,7 +10,7 @@ URL: str = 'https://logs.eolem.com/'
 
 async def download(log: str) -> None:
     async with httpx.AsyncClient() as client:
-        rsp = await client.get(log)  # Nope, this is a synchronous call!
+        rsp = await client.get(log)
         filename = log.split('/')[-1]
         with open(filename, 'w') as f:
             f.write(rsp.text)
