@@ -1,15 +1,25 @@
 import sqlite3
+from contextlib import ContextDecorator
 
 from typing import Iterator
 
 from tp08.User import User
 
 
-class UserDAO:
+class UserDAO(ContextDecorator):
     def __init__(self, db_file: str):
         self.__con = sqlite3.connect(db_file)
 
     def __del__(self):
+        self.__con.close()
+
+    def __enter__(self):
+        print('__enter__')
+        return self
+
+    def __exit__(self, *exc):
+        print('__exit__')
+        print(exc)
         self.__con.close()
 
     def find_all(self) -> Iterator[User]:
