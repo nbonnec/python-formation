@@ -5,15 +5,25 @@ import sys
 from pprint import pprint
 from utils import new_paragraph
 
+from tp05.Circle import Circle
+from tp05.ICalcGeo import ICalcGeo
 from tp05.Square import Square
 
 
+def show_surface(geo: ICalcGeo):
+    print(f'Surface is {geo.surface}')
+
+
 def main():
-    new_paragraph('inheritance')
-    c = Square(10)
-    print(c, c.get_surface())
-    c.side = 5
-    print(c, c.get_surface())
+    new_paragraph('abstract')
+    sq = Square(10)
+    print(sq, sq.surface)
+    sq.side = 5
+    print(sq, sq.surface)
+    c = Circle(5)
+    print(c, c.surface)
+    show_surface(c)
+    show_surface(sq)
 
 
 if __name__ == '__main__':
