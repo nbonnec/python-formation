@@ -20,6 +20,7 @@ https://docadmin.orsys.fr/Emargement/Participant
 - https://docs.python.org/fr/3/library/tkinter.html
 - https://python-poetry.org/
 - https://docs.scrapy.org/en/latest/intro/tutorial.html
+- https://www.python-httpx.org/
 
 ## Notes
 
