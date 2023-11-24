@@ -1,3 +1,3 @@
-import tp05.main as my_main
+import tp06.main as my_main
 
 my_main.main()
