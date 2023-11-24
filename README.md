@@ -21,6 +21,8 @@ https://docadmin.orsys.fr/Emargement/Participant
 - https://python-poetry.org/
 - https://docs.scrapy.org/en/latest/intro/tutorial.html
 - https://www.python-httpx.org/
+- https://docs.aiohttp.org/en/stable/
+- https://realpython.com/async-io-python/
 
 ## Notes
 
