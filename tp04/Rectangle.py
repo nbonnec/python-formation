@@ -5,6 +5,8 @@ from types import NotImplementedType
 class Rectangle:
     """A very sophisticated class."""
 
+    __slots__ = ('__length', '__width')
+
     def __init__(self, length: int, width: int):
         """
         A shiny constructor.

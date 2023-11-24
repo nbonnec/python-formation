@@ -8,9 +8,13 @@ from tp04.Rectangle import Rectangle
 
 
 def main():
-    new_paragraph('property')
+    new_paragraph('private')
     rectangle1 = Rectangle(5, 8)
-    print(f'Length= {rectangle1.length}, width= {rectangle1.width}, surface= {rectangle1.get_surface()}')
+    print(rectangle1._Rectangle__length)  # Bad!
+    print(rectangle1._Rectangle__width)  # Bad!
+    length = rectangle1.get_length()
+    width = rectangle1.get_width()
+    print(f'Length= {length}, width= {width}, surface= {rectangle1.get_surface()}')
 
     new_paragraph('equals')
     rectangle2 = Rectangle(5, 8)
