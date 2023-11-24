@@ -25,6 +25,10 @@ https://docadmin.orsys.fr/Emargement/Participant
 - https://realpython.com/async-io-python/
 - https://flask.palletsprojects.com/en/3.0.x/quickstart/#a-minimal-application
 - db browser : https://sqlitebrowser.org/
+- web UI : https://www.gradio.app/
+- desktop UI : https://www.electronjs.org/fr/
+- dearPyGui ! https://github.com/hoffstadt/DearPyGui
+
 
 ## Notes
 
