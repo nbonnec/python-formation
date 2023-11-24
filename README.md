@@ -15,6 +15,8 @@ https://docadmin.orsys.fr/Emargement/Participant
 - https://www.attrs.org/en/stable/examples.html
 - `@override`
 - sqlite3
+- https://www.fullstackpython.com/object-relational-mappers-orms.html
+- https://agiledata.org/essays/impedanceMismatch.html
 
 ## Notes
 
