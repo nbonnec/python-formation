@@ -23,6 +23,7 @@ https://docadmin.orsys.fr/Emargement/Participant
 - https://www.python-httpx.org/
 - https://docs.aiohttp.org/en/stable/
 - https://realpython.com/async-io-python/
+- https://flask.palletsprojects.com/en/3.0.x/quickstart/#a-minimal-application
 
 ## Notes
 
