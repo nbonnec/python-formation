@@ -29,6 +29,7 @@ https://docadmin.orsys.fr/Emargement/Participant
 - desktop UI : https://www.electronjs.org/fr/
 - dearPyGui ! https://github.com/hoffstadt/DearPyGui
 - https://pandas.pydata.org/docs/user_guide/10min.html
+- https://www.kaggle.com/
 
 
 ## Notes
