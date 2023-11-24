@@ -28,6 +28,7 @@ https://docadmin.orsys.fr/Emargement/Participant
 - web UI : https://www.gradio.app/
 - desktop UI : https://www.electronjs.org/fr/
 - dearPyGui ! https://github.com/hoffstadt/DearPyGui
+- https://pandas.pydata.org/docs/user_guide/10min.html
 
 
 ## Notes
