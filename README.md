@@ -31,7 +31,6 @@ https://docadmin.orsys.fr/Emargement/Participant
 - https://pandas.pydata.org/docs/user_guide/10min.html
 - https://www.kaggle.com/
 
-
 ## Notes
 
 ### Slices
@@ -47,3 +46,10 @@ Les librairies utiliseront `finally`.
 ### Multiprocessing
 
 Plutôt pour le calcul. Pour les I/O, on fera plutôt du multithreading.
+
+### Packaging
+
+Wheel et Twine.
+
+- https://eolem.notion.site/01-Packaging-Python-setup-py-et-setuptools-16ea4f064e03411682c81f13d888bd02?pvs=4
+- https://eolem.notion.site/02-Packaging-Python-d-ploiement-et-h-bergement-028cf4e7d4a3453fb6f89183e49dbd9d?pvs=4

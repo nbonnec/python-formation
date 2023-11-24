@@ -6,8 +6,6 @@ Frédéric GAURAT
 
 https://github.com/fgaurat/pythonperf_20112023
 
-L’accès participant se fait via l’adresse https://docadmin.orsys.fr avec le mot de passe : 5jvU3PxAC
-
 	"Python main function": {
 		"prefix": "pymain",
 		"body": [
@@ -111,22 +109,22 @@ def show_users():
 html=""
 dao = UserDAO('formation.db')
 
-    users = dao.findAll()
-    for user in users:
-        html+=f"""
-        <tr>
-            <td>{user.id}</td>
-            <td>{user.first_name}</td>
-            <td>{user.last_name}</td>
-            <td>{user.email}</td>
-        </tr>
-        """
-    
-    return f"<table>{html}</table>"
+users = dao.findAll()
+for user in users:
+html+=f"""
+<tr>
+    <td>{user.id}</td>
+    <td>{user.first_name}</td>
+    <td>{user.last_name}</td>
+    <td>{user.email}</td>
+</tr>
+"""
+
+return f"
+<table>{html}</table>"
 ```
 
 ---
-
 
 ```html
 <!DOCTYPE html>
@@ -139,28 +137,28 @@ dao = UserDAO('formation.db')
 </head>
 <body>
 
-    <table>
-        <thead>
-            <tr>
-                <td>#</td>
-                <td>first_name</td>
-                <td>last_name</td>
-                <td>email</td>
-            </tr>
-        </thead>
-        <tbody>
+<table>
+    <thead>
+    <tr>
+        <td>#</td>
+        <td>first_name</td>
+        <td>last_name</td>
+        <td>email</td>
+    </tr>
+    </thead>
+    <tbody>
 
-            {%for user in users%}
-            <tr>
-                <td>{{user.id}}</td>
-                <td>{{user.first_name}}</td>
-                <td>{{user.last_name}}</td>
-                <td>{{user.email}}</td>
-            </tr>            
-            {%endfor%}
+    {%for user in users%}
+    <tr>
+        <td>{{user.id}}</td>
+        <td>{{user.first_name}}</td>
+        <td>{{user.last_name}}</td>
+        <td>{{user.email}}</td>
+    </tr>
+    {%endfor%}
 
-        </tbody>
-    </table>
+    </tbody>
+</table>
 
 </body>
 </html>
@@ -174,17 +172,17 @@ https://getbootstrap.com/
 
 ---
 
-
 ```python
 @app.route("/users")
 def show_users():
-html=""
-dao = UserDAO('formation.db')
-users = dao.findAll()
+    html = ""
+    dao = UserDAO('formation.db')
+    users = dao.findAll()
 
     # from flask import Flask,render_template
-    return render_template("users_list.html",users=users)
+    return render_template("users_list.html", users=users)
 ```
+
     
 ---
 
