@@ -24,6 +24,7 @@ https://docadmin.orsys.fr/Emargement/Participant
 - https://docs.aiohttp.org/en/stable/
 - https://realpython.com/async-io-python/
 - https://flask.palletsprojects.com/en/3.0.x/quickstart/#a-minimal-application
+- db browser : https://sqlitebrowser.org/
 
 ## Notes
 
