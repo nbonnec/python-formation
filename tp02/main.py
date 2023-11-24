@@ -3,32 +3,24 @@
 import os
 import sys
 from pprint import pprint
-from utils import new_paragraph
-
-
-def log(prefix='', path=''):
-    def wrapper_log(func):
-        def do_log(*args, **kwargs):
-            print(f'{prefix}: {func} | {path} | args=  {args} | kwargs= {kwargs}')
-            ret = func(*args, **kwargs)
-            print(f'return= {ret}')
-            return ret
-
-        return do_log
-
-    return wrapper_log
-
-
-@log('LOG', __file__)
-def say_hello(name: str):
-    return f'Hello {name}'
 
 
 def main():
-    new_paragraph('decorator')
-    r = say_hello('Nico')
-    print(r)
-    say_hello(name='Nico')
+    try:
+        a = int(input('Value of a= '))
+        b = 2
+        c = b / a
+        print(c)
+    except ZeroDivisionError as e:
+        print('ZeroDivisionError')
+        print(e, type(e))
+    except TypeError as e:
+        print('TypeError')
+        print(e, type(e))
+    except ValueError as e:
+        print('ValueError')
+        print(e, type(e))
+    print('After errors')
 
 
 if __name__ == '__main__':
