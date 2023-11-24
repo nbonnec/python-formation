@@ -32,3 +32,7 @@ https://docadmin.orsys.fr/Emargement/Participant
 D'une manière globale, les librairies ne devraient pas gérer les exceptions, juste les renvoyer.
 Au main de gérer les exceptions et de les traiter.
 Les librairies utiliseront `finally`.
+
+### Multiprocessing
+
+Plutôt pour le calcul. Pour les I/O, on fera plutôt du multithreading.
