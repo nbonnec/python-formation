@@ -1,3 +1,3 @@
-import tp01.main as my_main
+import tp02.main as my_main
 
 my_main.main()
